@@ -46,7 +46,7 @@ body {
 .main-container {
   display: flex;
   background: #f9f9f9;
-  width: 65%;
+  width: 1024px;
   height: 720px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -56,23 +56,23 @@ body {
   margin: 50px 75px;
 }
 
-.input-text{
+.input-text {
   position: relative;
   margin-bottom: 20px;
 }
 
-.placeholder{
+.placeholder {
   text-transform: uppercase;
   font-size: 10px;
   font-family: ff-mark;
   font-weight: 700;
   color: #ababab;
   position: absolute;
-  top:35%;
+  top: 35%;
   left: 15px;
   user-select: none;
   pointer-events: none;
-  transition: .095s ;
+  transition: 0.095s;
 }
 
 .input-text input {
@@ -95,11 +95,11 @@ body {
 }
 
 .input-text input:focus ~ .placeholder,
-.input-text input:valid ~ .placeholder{
+.input-text input:valid ~ .placeholder {
   top: 10%;
-  left:8px;
+  left: 8px;
   font-size: 9px;
-  transition: .095s ;
+  transition: 0.095s;
 }
 
 /*Creando checkbox personalizado
@@ -107,7 +107,7 @@ video de referencia:
 */
 label {
   font-size: 13px;
-  color:#9999B1;
+  color: #9999b1;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -119,7 +119,7 @@ label {
 input[type="checkbox"] + label {
   display: block;
   cursor: pointer;
-  padding: 0.em;
+  padding: 0em;
 }
 
 input[type="checkbox"] {
@@ -146,18 +146,18 @@ input[type="checkbox"]:checked + label:before {
   color: #f9f9f9;
 }
 
-input[type="checkbox"]:checked + label{
+input[type="checkbox"]:checked + label {
   color: #212121;
 }
 /*aquí termina todo el estilo del checkbox y el label de permanecer
 conectado*/
 
-.boton{
+.boton {
   margin-top: 70px;
   text-align: center;
 }
 
-.rounded-button{
+.rounded-button {
   background-color: transparent;
   border: 2px solid #ededed;
   border-radius: 22px;
@@ -169,19 +169,19 @@ conectado*/
   color: #ededed;
 }
 
-.rounded-button:focus{
+.rounded-button:focus {
   background-color: #d13639;
   border: none;
   color: #ededed;
 }
 
-.helpbar{
+.helpbar {
   margin: 70px 0;
   display: flex;
   flex-direction: column;
 }
 
-.helpbar a{
+.helpbar a {
   font-family: ff-mark;
   text-transform: uppercase;
   font-size: 12px;
@@ -190,17 +190,17 @@ conectado*/
   color: #ababab;
 }
 
-.helpbar a:hover{
-  color: #212121
+.helpbar a:hover {
+  color: #212121;
 }
 /* Aquí termina todo el estilo del contenedor de la izquierda*/
 
-
-.right-container{
+.right-container {
   width: 100%;
+  height: 100%;
 }
 
-.right-container img{
+.right-container img {
   width: 100%;
   height: 100%;
   -webkit-touch-callout: none;
@@ -209,4 +209,26 @@ conectado*/
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+@media (max-width: 1280px) {
+  .main-container {
+    height: 80%;
+  }
+
+  .left-container {
+    height: 100%;
+  }
+
+  .titulo {
+    font-size: 9px;
+  }
+
+  .boton {
+    margin-top: 20px;
+  }
+
+  .helpbar {
+    margin-top: 10px;
+  }
 }
