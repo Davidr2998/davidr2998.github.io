@@ -9,55 +9,58 @@
   </head>
 
   <body>
-    <div class="main">
-      <div class="main-container">
-        <div class="left-container">
-          <div class="logo-img">
-            <img src="./img/lol-logo.png" alt="League of legends logo" />
+    <div class="o-main-container">
+      <div class="o-main-panel">
+        <div class="o-left-panel">
+          <img
+            src="./img/lol-logo.png"
+            class="o-logo"
+            alt="League of legends logo"
+          />
+          <h1 class="o-title">Inicia sesión con tu cuenta de Riot</h1>
+
+          <div class="o-input-section">
+            <div class="o-input-text">
+              <input
+                type="text"
+                name="username"
+                id="username_txt"
+                autocomplete="off"
+                required
+              />
+              <div class="placeholder">Nombre de usuario</div>
+            </div>
+            <div class="o-input-text">
+              <input
+                type="password"
+                name="password"
+                id="password_txt"
+                required
+              />
+              <div class="placeholder">Contraseña</div>
+            </div>
+
+            <div class="o-checkbox">
+              <input
+                type="checkbox"
+                name="remember-me"
+                id="rememberme_checkbox"
+              />
+              <label for="rememberme_checkbox">Permanecer conectado</label>
+            </div>
           </div>
 
-          <div class="titulo">
-            <h1>Inicia sesión con tu cuenta de Riot</h1>
-          </div>
+          <input type="button" class="o-rounded-button" value="🡒" />
 
-          <div class="input-text">
-            <input
-              type="text"
-              name="username"
-              id="username_txt"
-              autocomplete="off"
-              required
-            />
-            <div class="placeholder">Nombre de usuario</div>
-          </div>
-
-          <div class="input-text">
-            <input type="password" name="password" id="password_txt" required />
-            <div class="placeholder">Contraseña</div>
-          </div>
-
-          <div class="checkbox">
-            <input
-              type="checkbox"
-              name="remember-me"
-              id="rememberme_checkbox"
-            />
-            <label for="rememberme_checkbox">Permanecer conectado</label>
-          </div>
-
-          <div class="boton">
-            <input type="button" class="rounded-button" value="🡒" />
-          </div>
-
-          <div class="helpbar">
+          <div class="o-help-section">
             <a href="#">Crear una cuenta</a>
             <a href="#">¿No puedes iniciar sesión?</a>
           </div>
         </div>
-        <div class="right-container">
+        <div class="o-right-panel">
           <img
             src="./img/lol-left-container.png"
-            alt="imagen wallpaper de league of legeds"
+            alt="imagen wallpaper de league of legends"
           />
         </div>
       </div>

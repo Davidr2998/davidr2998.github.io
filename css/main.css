@@ -208,7 +208,7 @@ body {
   background-color: #5454c5;
   width: 200px;
   height: 50px;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
@@ -251,136 +251,49 @@ a {
 }
 
 .trianglebutton:hover .side-triangles-left {
-  border-right: 25px solid #6662d5;
+  border-right: 25px solid #212121;
   transition: ease-in-out 0.2s;
 }
 
 .trianglebutton:hover .side-triangles-right {
-  border-left: 25px solid #6662d5;
+  border-left: 25px solid #212121;
   transition: ease-in-out 0.2s;
 }
 
 .trianglebutton:hover {
-  background: #6662d5;
+  background: #212121;
+  color: #eeeeee;
   transition: ease-in-out 0.2s;
 }
 
 /* Boton de otro color 2 */
 
-.trianglebutton2 {
-  position: relative;
+.bluebutton {
   background-color: #39c7ff;
-  width: 200px;
-  height: 50px;
-  margin: 10px auto;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px;
-  cursor: pointer;
   color: #212121;
-  font-family: "Spiegel", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
 }
 
-.side-triangles-left2 {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-left: 25px solid transparent;
+.left-blue {
   border-right: 25px solid #39c7ff;
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid transparent;
-  top: 0%;
-  left: -25%;
 }
 
-.side-triangles-right2 {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
+.right-blue {
   border-left: 25px solid #39c7ff;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid transparent;
-  top: 0%;
-  left: 100%;
-}
-
-.trianglebutton2:hover .side-triangles-left2 {
-  border-right: 25px solid #5edfff;
-  transition: ease-in-out 0.2s;
-}
-
-.trianglebutton2:hover .side-triangles-right2 {
-  border-left: 25px solid #5edfff;
-  transition: ease-in-out 0.2s;
-}
-
-.trianglebutton2:hover {
-  background: #5edfff;
-  transition: ease-in-out 0.2s;
 }
 
 /* Boton triangular 3 */
 
-.trianglebutton3 {
-  position: relative;
+.yellowbutton {
   background-color: #fccd4e;
-  width: 200px;
-  height: 50px;
-  margin: 10px auto;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 50px;
-  cursor: pointer;
   color: #212121;
-  font-family: "Spiegel", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
 }
 
-.side-triangles-left3 {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-left: 25px solid transparent;
+.left-yellow {
   border-right: 25px solid #fccd4e;
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid transparent;
-  top: 0%;
-  left: -25%;
 }
 
-.side-triangles-right3 {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
+.right-yellow {
   border-left: 25px solid #fccd4e;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-top: 25px solid transparent;
-  top: 0%;
-  left: 100%;
-}
-
-.trianglebutton3:hover .side-triangles-left3 {
-  border-right: 25px solid #fbda7e;
-  transition: ease-in-out 0.2s;
-}
-
-.trianglebutton3:hover .side-triangles-right3 {
-  border-left: 25px solid #fbda7e;
-  transition: ease-in-out 0.2s;
-}
-
-.trianglebutton3:hover {
-  background: #fbda7e;
-  transition: ease-in-out 0.2s;
 }
 
 .conocimientos {
@@ -388,31 +301,29 @@ a {
   justify-content: center;
 }
 
-.video{
+.video {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-iframe{
-  width:560px;
+iframe {
+  width: 560px;
   height: 300px;
 }
 
-
-@media (max-width: 700px){
-  .conocimientos{
+@media (max-width: 700px) {
+  .conocimientos {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .card{
+  .card {
     width: 90%;
   }
 
-  .card-projects{
-    width:90%;
+  .card-projects {
+    width: 90%;
   }
 }
-
